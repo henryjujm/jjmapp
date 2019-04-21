@@ -1,3 +1,5 @@
+---
+
 environments:
   - name: acceptance
     cluster:
@@ -5,10 +7,12 @@ environments:
   - name: production
     cluster:
       maxSize: 5
+
 service:
-  name:extension
-  port: 80
   healthEndpoint: /
+  port: 80
   pathPatterns:
-  - /*
+    - /*
   pipeline:
+    source:
+      repo: cplee/aftp-mu
