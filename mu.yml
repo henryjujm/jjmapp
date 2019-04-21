@@ -1,7 +1,4 @@
 environments:
-- name: acceptance
-- name: production
-environments:
   - name: acceptance
     cluster:
       maxSize: 2
