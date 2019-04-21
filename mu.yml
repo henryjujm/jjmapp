@@ -1,6 +1,13 @@
 environments:
 - name: acceptance
 - name: production
+environments:
+  - name: acceptance
+    cluster:
+      maxSize: 2
+  - name: production
+    cluster:
+      maxSize: 5
 service:
   name:extension
   port: 80
